@@ -1,4 +1,5 @@
 import "./Intro.scss";
+import { ArrowDownIcon } from "../../assets/Icons";
 
 export const Intro = () => {
   return (
@@ -17,6 +18,9 @@ export const Intro = () => {
             standout in the technology field.
           </div>
         </div>
+      </div>
+      <div className="arrow-down bounce">
+        <ArrowDownIcon />
       </div>
     </section>
   );
