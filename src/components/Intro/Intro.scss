@@ -40,6 +40,10 @@
         font-weight: 400;
         padding: 22px;
         font-size: 18px;
+
+        span {
+          color: var(--clr-secondary);
+        }
       }
     }
   }

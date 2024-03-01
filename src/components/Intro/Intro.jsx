@@ -11,11 +11,13 @@ export const Intro = () => {
         <div className="about-me-container">
           <div className="profile-image"></div>
           <div className="about-me-text">
-            Pernilla is an exceptional developer known for her innovative
-            solutions and exceptional coding abilities. She creates
-            user-friendly applications and solves complex issues with ease. Her
-            drive for excellence makes her a valuable asset to any project and a
-            standout in the technology field.
+            Hi, I'm Pernilla. Currently, I'm part of a Web Development Bootcamp
+            at Technigo. While I've got some experience in web development, my
+            goal with this education is to deep dive into
+            <span> JavaScript</span>, <span>React</span>, and
+            <span> TypeScript</span>. I'm in the process of redesigning my
+            portfolio, but you can always shoot me an email at
+            <a href="mailto:hej@pernillasterner.se"> hej@pernillasterner.se</a>.
           </div>
         </div>
       </div>
