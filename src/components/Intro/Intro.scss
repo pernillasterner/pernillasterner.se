@@ -1,0 +1,38 @@
+.intro-container {
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .intro-wrapper {
+    max-width: 800px;
+
+    .intro-text {
+      font-weight: 600;
+    }
+
+    .job-title {
+      color: #0b24f5;
+    }
+
+    .about-me-container {
+      display: flex;
+
+      .profile-image {
+        background-image: url("/profile.jpeg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        border-radius: 50%;
+        min-width: 100px;
+        height: 100px;
+      }
+
+      .about-me-text {
+        padding: var(--general-padding);
+        font-size: 0.8rem;
+      }
+    }
+  }
+}
