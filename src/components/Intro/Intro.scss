@@ -35,14 +35,7 @@
 
     .job-title {
       font-weight: 700;
-      font-size: 5rem;
       color: var(--clr-primary);
-      @media screen and (max-width: 900px) {
-        font-size: 3.5rem;
-      }
-      @media screen and (max-width: 667px) {
-        font-size: 1.5rem;
-      }
     }
 
     .about-me-container {
@@ -101,7 +94,7 @@
 
     &.bounce {
       position: absolute;
-      bottom: 0px;
+      bottom: 20px;
       display: inline-block;
       animation: bounce 4s infinite linear;
     }
@@ -110,16 +103,16 @@
       0%,
       100% {
         /* Start and end position (no vertical movement) */
-        transform: translateY(0);
+        transform: translateY(-50);
       }
       25%,
       75% {
         /* Move up */
-        transform: translateY(-50px);
+        transform: translateY(-100px);
       }
       50% {
         /* Stop for 1s at the top */
-        transform: translateY(0);
+        transform: translateY(-50);
       }
     }
   }
