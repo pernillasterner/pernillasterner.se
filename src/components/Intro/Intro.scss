@@ -1,0 +1,74 @@
+.intro-container {
+  //   min-height: 100vh;
+  height: 980px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+  .intro-wrapper {
+    max-width: 900px;
+
+    .intro-text {
+      font-weight: 600;
+      font-size: 32px;
+      line-height: 39px;
+    }
+
+    .job-title {
+      font-weight: 700;
+      font-size: 80px;
+      color: #0b24f5;
+    }
+
+    .about-me-container {
+      display: flex;
+
+      .profile-image {
+        background-image: url("/profile.jpeg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        border-radius: 50%;
+        min-width: 150px;
+        height: 150px;
+      }
+
+      .about-me-text {
+        font-weight: 400;
+        padding: 22px;
+        font-size: 18px;
+      }
+    }
+  }
+
+  .arrow-down {
+    position: relative;
+
+    &.bounce {
+      position: absolute;
+      bottom: 60px;
+      display: inline-block;
+      animation: bounce 4s infinite linear;
+    }
+
+    @keyframes bounce {
+      0%,
+      100% {
+        /* Start and end position (no vertical movement) */
+        transform: translateY(0);
+      }
+      25%,
+      75% {
+        /* Move up */
+        transform: translateY(-50px);
+      }
+      50% {
+        /* Stop for 1s at the top */
+        transform: translateY(0);
+      }
+    }
+  }
+}
