@@ -6,7 +6,7 @@ export const Intro = () => {
     <section className="intro-container">
       <div className="intro-wrapper">
         <p className="intro-text">Hi, I’m Pernilla Sterner</p>
-        <h1 className="job-title">Frontend Developer</h1>
+        <h1 className="job-title">Software Developer</h1>
 
         <div className="about-me-container">
           <div className="profile-image"></div>
@@ -19,6 +19,10 @@ export const Intro = () => {
             portfolio, but you can always shoot me an email at
             <a href="mailto:hej@pernillasterner.se"> hej@pernillasterner.se</a>.
           </div>
+        </div>
+        <div className="social-links">
+          <a href="https://www.linkedin.com/in/pernilla-sterner/">Linkedin</a>
+          <a href="https://github.com/pernillasterner">GitHub</a>
         </div>
       </div>
       <div className="arrow-down bounce">

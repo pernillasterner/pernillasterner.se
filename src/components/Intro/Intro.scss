@@ -1,30 +1,54 @@
 .intro-container {
-  //   min-height: 100vh;
   height: 980px;
-
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   position: relative;
 
+  @media screen and (max-width: 1280px) {
+    padding: var(--general-padding);
+    height: 627px;
+  }
+  @media screen and (max-width: 667px) {
+    height: 720px;
+  }
+
   .intro-wrapper {
     max-width: 900px;
 
+    @media screen and (max-width: 667px) {
+      margin-top: 4em;
+    }
+
     .intro-text {
       font-weight: 600;
-      font-size: 32px;
+      font-size: 2rem;
       line-height: 39px;
+      @media screen and (max-width: 900px) {
+        font-size: 1.5rem;
+      }
+      @media screen and (max-width: 667px) {
+        font-size: 1rem;
+      }
     }
 
     .job-title {
       font-weight: 700;
-      font-size: 80px;
-      color: #0b24f5;
+      font-size: 5rem;
+      color: var(--clr-primary);
+      @media screen and (max-width: 900px) {
+        font-size: 3.5rem;
+      }
+      @media screen and (max-width: 667px) {
+        font-size: 1.5rem;
+      }
     }
 
     .about-me-container {
       display: flex;
+      justify-content: center;
+      align-items: center;
 
       .profile-image {
         background-image: url("/profile.jpeg");
@@ -32,18 +56,42 @@
         background-size: cover;
         background-position: center;
         border-radius: 50%;
-        min-width: 150px;
-        height: 150px;
+        min-width: 164px;
+        height: 164px;
+        @media screen and (max-width: 667px) {
+          position: absolute;
+          top: 50px;
+        }
       }
 
       .about-me-text {
         font-weight: 400;
         padding: 22px;
-        font-size: 18px;
+        font-size: 1rem;
+        line-height: 1.2rem;
+        @media screen and (max-width: 900px) {
+          font-size: 1rem;
+        }
+        @media screen and (max-width: 667px) {
+          padding: 0;
+          font-size: 0.8rem;
+        }
 
         span {
           color: var(--clr-secondary);
         }
+      }
+    }
+
+    .social-links {
+      display: flex;
+      justify-content: center;
+
+      a {
+        margin: 0 0.5em;
+      }
+      @media screen and (max-width: 667px) {
+        margin-top: 2em;
       }
     }
   }
@@ -53,7 +101,7 @@
 
     &.bounce {
       position: absolute;
-      bottom: 60px;
+      bottom: 0px;
       display: inline-block;
       animation: bounce 4s infinite linear;
     }
