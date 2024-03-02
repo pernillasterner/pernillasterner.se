@@ -3,8 +3,8 @@ import { ArrowDownIcon } from "../../assets/Icons";
 
 export const Intro = () => {
   return (
-    <section className="intro-container">
-      <div className="intro-wrapper">
+    <section className="intro-section">
+      <div className="intro-container">
         <p className="intro-text">Hi, I’m Pernilla Sterner</p>
         <h1 className="job-title">Software Developer</h1>
 

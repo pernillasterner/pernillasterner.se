@@ -1,0 +1,124 @@
+.project-section {
+  padding: var(--general-padding);
+  display: flex;
+  justify-content: center;
+  height: auto;
+
+  .project-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .project-title {
+      margin: 1em 0;
+      @media screen and (max-width: 900px) {
+        font-size: 56px;
+      }
+    }
+
+    .project-list {
+      .project-item {
+        max-width: 900px;
+        display: flex;
+        margin: 7em 0;
+        @media screen and (max-width: 667px) {
+          flex-direction: column;
+          margin: 2em 0;
+        }
+
+        img {
+          width: 400px;
+          height: auto;
+          @media screen and (max-width: 667px) {
+            width: 343px;
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+          }
+        }
+
+        .project-details {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          margin-left: 4em;
+          @media screen and (max-width: 667px) {
+            margin: 2em 0;
+          }
+
+          h3 {
+            font-weight: 600;
+            font-size: 32px;
+            @media screen and (max-width: 900px) {
+              font-size: 24px;
+            }
+          }
+
+          p {
+            font-size: 18px;
+          }
+
+          .skill-tags {
+            display: flex;
+            margin-top: 2em;
+            @media screen and (max-width: 900px) {
+              margin: 1em 0;
+            }
+
+            .skill-tag {
+              margin-right: 0.5em;
+              color: var(--clr-white);
+              background: var(--clr-black);
+              padding: 0.1em 0.4em;
+            }
+          }
+
+          .view-live {
+            display: flex;
+
+            @media screen and (max-width: 900px) {
+              flex-direction: column;
+            }
+
+            .view-btn {
+              background: var(--clr-grey-8);
+              border-radius: 40px;
+              display: flex;
+              align-items: center;
+              padding: 0.5em;
+              margin-right: 0.5em;
+              transition: all 0.6s ease-in-out;
+              margin: 0.5em 0;
+              width: fit-content;
+
+              &.globe:hover {
+                background: var(--clr-primary);
+                a {
+                  color: var(--clr-white);
+                }
+              }
+
+              &.github:hover {
+                background: var(--clr-secondary);
+
+                a {
+                  color: var(--clr-white);
+                }
+              }
+
+              a {
+                margin-left: 0.7em;
+                color: var(--clr-black);
+                font-size: 20px;
+                &:hover {
+                  color: var(--clr-white);
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
