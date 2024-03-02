@@ -2,8 +2,8 @@ import "./Tech.scss";
 
 export const Tech = () => {
   return (
-    <section className="tech-container">
-      <div className="tech-wrapper">
+    <section className="tech-section">
+      <div className="tech-container">
         <h2>Tech</h2>
 
         <div className="tech-skills">
