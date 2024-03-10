@@ -3,6 +3,7 @@ import chatImage from "../../../assets/project-images/chat.png";
 import { GitHubBlackIcon, GlobeBlackIcon } from "../../../assets/Icons";
 import { useState } from "react";
 import { projects } from "./repo-data.json";
+import { Tag } from "/src/components/styles/typography/Tag.jsx";
 
 /**
  * created_at: "2023-08-08T12:58:46Z"
@@ -43,35 +44,45 @@ export const ProjectCard = ({ repositories }) => {
   console.log(filteredRepos);
   return (
     <div className="project-list">
-      <div className="project-item">
-        <img src={chatImage} alt="Chat Application" className="project-image" />
-        <div className="project-details">
-          <div className="project-description">
-            <h3>Chatbot built in javascript</h3>
-            <p>
-              The chat bot app is a conversational AI-powered tool designed to
-              enhance user experience by providing instant, personalized, and
-              automated responses to user inquiries.
-            </p>
-            <div className="skill-tags">
-              <p className="skill-tag">HTML5</p>
-              <p className="skill-tag">CSS3</p>
-              <p className="skill-tag">React</p>
-              <p className="skill-tag">Node</p>
+      {filteredRepos.slice(0, visibleRepos).map((repo) => {
+        const matchingData = projects.find(
+          (data) => data.repoName === repo.name
+        );
+
+        // Handle missing data
+        if (!matchingData) return null;
+
+        return (
+          <article className="project-item" key={matchingData.id}>
+            <img
+              src={chatImage}
+              alt="Chat Application"
+              className="project-image"
+            />
+            <div className="project-details">
+              <div className="project-description">
+                <h3>{matchingData.publicName}</h3>
+                <p>{repo.description}</p>
+                <div className="skill-tags">
+                  {repo.topics.map((topic, index) => (
+                    <Tag key={index} tagText={topic} />
+                  ))}
+                </div>
+              </div>
+              <div className="view-live">
+                <div className="view-btn globe">
+                  <GlobeBlackIcon />
+                  <a href={repo.homepage}>Live demo</a>
+                </div>
+                <div className="view-btn github">
+                  <GitHubBlackIcon />
+                  <a href={repo.html_url}>View the code</a>
+                </div>
+              </div>
             </div>
-          </div>
-          <div className="view-live">
-            <div className="view-btn globe">
-              <GlobeBlackIcon />
-              <a href="">Live demo</a>
-            </div>
-            <div className="view-btn github">
-              <GitHubBlackIcon />
-              <a href="">View the code</a>
-            </div>
-          </div>
-        </div>
-      </div>
+          </article>
+        );
+      })}
     </div>
   );
 };
