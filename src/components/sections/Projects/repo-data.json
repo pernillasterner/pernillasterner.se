@@ -1,0 +1,16 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "repoName": "technigo-project-pizza",
+      "publicName": "Virtual Pizzeria Place",
+      "imageUrl": "/assets/project-img/jspizza.png"
+    },
+    {
+      "id": 0,
+      "repoName": "technigo-news-site",
+      "publicName": "News Site",
+      "imageUrl": "/assets/project-img/jspizza.png"
+    }
+  ]
+}
