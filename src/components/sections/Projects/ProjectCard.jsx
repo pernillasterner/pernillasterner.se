@@ -1,24 +1,15 @@
 import "./Projects.scss";
-import chatImage from "../../../assets/project-images/chat.png";
+// import newsImage from "/assets/project-img/news.png";
 import { GitHubBlackIcon, GlobeBlackIcon } from "../../../assets/Icons";
 import { useState } from "react";
 import { projects } from "./repo-data.json";
 import { Tag } from "/src/components/styles/typography/Tag.jsx";
-
-/**
- * created_at: "2023-08-08T12:58:46Z"
- * description: "WordPress Multisite with Bedrock, Composer, and WPML Integration"
- * name: "multisite"
- * id: 676108650
- * language:
- * topics: Array(13) [ "arrays", "css3", "figma", … ]
- * html_url: "https://github.com/pernillasterner/technigo-project-library"
- * homepage: "https://technigo-project-library.netlify.app/"
- */
+import { Paragraph } from "../../styles/typography/Paragraph";
+import { Heading } from "../../styles/typography/Heading";
 
 export const ProjectCard = ({ repositories }) => {
   // State to track the number fo cards to display
-  const [visibleRepos, setVisibleRepos] = useState(5);
+  const [visibleRepos, setVisibleRepos] = useState(10);
 
   // Filter and match respositories with data in repoData.projects
   const filteredRepos = repositories.filter((repo) => {
@@ -39,9 +30,8 @@ export const ProjectCard = ({ repositories }) => {
     );
   };
 
-  const showMoreLessLabel = visibleRepos === 5 ? "Show more" : "Show less";
+  const showMoreLessLabel = visibleRepos === 10 ? "Show more" : "Show less";
 
-  console.log(filteredRepos);
   return (
     <div className="project-list">
       {filteredRepos.slice(0, visibleRepos).map((repo) => {
@@ -55,14 +45,15 @@ export const ProjectCard = ({ repositories }) => {
         return (
           <article className="project-item" key={matchingData.id}>
             <img
-              src={chatImage}
+              src={matchingData.imageUrl}
               alt="Chat Application"
               className="project-image"
+              onError={(e) => console.error("Image failed to load:", e)}
             />
             <div className="project-details">
               <div className="project-description">
-                <h3>{matchingData.publicName}</h3>
-                <p>{repo.description}</p>
+                <Heading level={3} text={matchingData.publicName} />
+                <Paragraph text={repo.description} />
                 <div className="skill-tags">
                   {repo.topics.map((topic, index) => (
                     <Tag key={index} tagText={topic} />
