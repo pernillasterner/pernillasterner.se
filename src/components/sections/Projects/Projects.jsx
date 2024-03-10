@@ -1,8 +1,8 @@
 import "./Projects.scss";
-import chatImage from "../../assets/project-images/chat.png";
-import weatherImage from "../../assets/project-images/weather.png";
-import gameImage from "../../assets/project-images/game.png";
-import { GitHubBlackIcon, GlobeBlackIcon } from "../../assets/Icons";
+import chatImage from "../../../assets/project-images/chat.png";
+import weatherImage from "../../../assets/project-images/weather.png";
+import gameImage from "../../../assets/project-images/game.png";
+import { GitHubBlackIcon, GlobeBlackIcon } from "../../../assets/Icons";
 
 export const Projects = () => {
   return (
