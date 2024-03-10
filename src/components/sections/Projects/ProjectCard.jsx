@@ -26,17 +26,19 @@ export const ProjectCard = ({ repositories }) => {
 
   // Sort the filtered repositories by their id (highest first)
   filteredRepos.sort((a, b) => {
-    const aData = projects.find(data => data.repoName === a.name);
-    const bData = projects.find(data => data.repoName === b.name);
-    return bData.id - aData.id
-  })
+    const aData = projects.find((data) => data.repoName === a.name);
+    const bData = projects.find((data) => data.repoName === b.name);
+    return bData.id - aData.id;
+  });
 
   const toggleVisibleCards = () => {
     // Show 5 cards or all cards based on current state
-    setVisibleRepos(prevVisibleCards => (prevVisibleCards === 5 ? filteredRepos.length))
+    setVisibleRepos((prevVisibleCards) =>
+      prevVisibleCards === 5 ? filteredRepos.length : 5
+    );
   };
 
-  const showMoreLessLabel = visibleCards === 5 ? "Show more" : "Show less";
+  const showMoreLessLabel = visibleRepos === 5 ? "Show more" : "Show less";
 
   console.log(filteredRepos);
   return (
