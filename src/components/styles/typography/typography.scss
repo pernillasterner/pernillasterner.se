@@ -1,0 +1,24 @@
+.skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  @media screen and (max-width: 900px) {
+    margin: 1em 0;
+  }
+
+  .tag-background {
+    background-color: var(--text);
+    padding: 2px 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+
+    .tag-text {
+      margin-right: 0.5em;
+      color: var(--clr-white);
+      background: var(--clr-black);
+      padding: 0.1em 0.4em;
+    }
+  }
+}

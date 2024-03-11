@@ -1,0 +1,47 @@
+{
+  "projects": [
+    {
+      "id": 6,
+      "repoName": "technigo-project-music-releases-vite",
+      "publicName": "Music Release App",
+      "imageUrl": "../../../assets/project-img/music.jpg"
+    },
+    {
+      "id": 5,
+      "repoName": "technigo-project-weather-app",
+      "publicName": "Weather App",
+      "imageUrl": "../../../assets/project-img/weather.jpg"
+    },
+    {
+      "id": 4,
+      "repoName": "technigo-project-library",
+      "publicName": "Digital Library",
+      "imageUrl": "../../../assets/project-img/library.png"
+    },
+    {
+      "id": 3,
+      "repoName": "technigo-project-chatbot",
+      "publicName": "Chat bot",
+      "imageUrl": "../../../assets/project-img/chat.png"
+    },
+    {
+      "id": 2,
+      "repoName": "technigo-project-pizza",
+      "publicName": "Virtual Pizzeria Place",
+      "imageUrl": "../../../assets/project-img/pizzeria.png"
+    },
+    {
+      "id": 1,
+      "repoName": "technigo-project-business-site",
+      "publicName": "Business Site",
+      "imageUrl": "../../../assets/project-img/business.jpg"
+    },
+
+    {
+      "id": 0,
+      "repoName": "technigo-news-site",
+      "publicName": "News Site",
+      "imageUrl": "/assets/project-img/news.png"
+    }
+  ]
+}

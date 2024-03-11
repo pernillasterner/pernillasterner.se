@@ -1,0 +1,66 @@
+button {
+  border-radius: var(--corner-radius);
+  background-color: var(--btn-gray);
+  color: var(--btn-text);
+  font-family: var(--heading-font);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  border: none;
+  transition: background-color 0.3s;
+  cursor: pointer;
+  padding: 10px 16px;
+}
+
+.show-more-btn {
+  border-radius: var(--corner-radius);
+  background-color: var(--btn-gray);
+  color: var(--btn-text);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  border: none;
+  transition: background-color 0.3s;
+  cursor: pointer;
+  padding: 12px;
+}
+
+.show-more-btn:hover {
+  color: white;
+  background-color: var(--clr-primary);
+}
+
+.button:hover svg {
+  filter: brightness(0) invert(1);
+}
+
+.github-btn:hover {
+  background-color: var(--clr-primary);
+  color: white;
+}
+
+.netlify-btn:hover {
+  background-color: var(--hover-pink);
+  color: white;
+}
+
+.article-btn {
+  background-color: white;
+}
+
+.article-btn:hover {
+  background-color: var(--hover-yellow);
+  color: var(--text);
+}
+
+.article-btn:hover svg {
+  filter: none;
+}
