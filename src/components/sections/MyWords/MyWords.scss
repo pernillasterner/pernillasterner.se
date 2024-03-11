@@ -28,8 +28,11 @@
   }
 
   .article-heading {
-    color: var(--clr-secondary);
     text-align: center;
+    color: var(--clr-secondary);
+    @media screen and (max-width: 900px) {
+      font-size: 56px;
+    }
   }
 
   .article-list {

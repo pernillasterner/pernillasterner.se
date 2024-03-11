@@ -19,15 +19,15 @@ export const MyWords = () => {
             </span>
             <Heading
               level={3}
-              text={"Bridging the Gap: Transitioning from Finance to Tech"}
+              text={"Lorem Ipsum...."}
               className={"article-title"}
             />
           </div>
           <p>
-            How to handle the challenge of bridging the gap between
-            buzzword-heavy advancements and practical application. Explore how
-            expertise from diverse domains converges to unlock innovation's true
-            potential across industries.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.
           </p>
           <Button
             icon={<ReadArticleIcon />}
