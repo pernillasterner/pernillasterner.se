@@ -1,0 +1,46 @@
+[
+  {
+    "id": "code",
+    "name": "Code",
+    "skillset": [
+      "HTML5",
+      "CSS3",
+      "Javascript ES6",
+      "React",
+      "GitHub",
+      "MongoDB",
+      "Express",
+      "Mongoose",
+      "Node.js"
+    ]
+  },
+  {
+    "id": "tool-box",
+    "name": "Tool Box",
+    "skillset": [
+      "Adobe Illustrator",
+      "Adobe Photoshop",
+      "Figma",
+      "Postman",
+      "Slack",
+      "Microsoft",
+      "Mac OS"
+    ]
+  },
+  {
+    "id": "upcoming",
+    "name": "Upcoming",
+    "skillset": ["Vue.js", "Tailwind", "Typescript", "UX Design", "3D Design"]
+  },
+  {
+    "id": "more",
+    "name": "More",
+    "skillset": [
+      "Web Design",
+      "Agile methodology",
+      "Collaborative work",
+      "UX Design",
+      "Team management"
+    ]
+  }
+]

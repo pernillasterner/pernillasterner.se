@@ -67,6 +67,11 @@
       align-self: stretch;
       border-bottom: 20px solid var(--clr-secondary);
     }
+    @media (max-width: 1279px) and (min-width: 744px) {
+      height: 340px;
+      align-self: stretch;
+      border-bottom: 20px solid var(--clr-secondary);
+    }
 
     .article-img {
       width: 100%;
@@ -74,6 +79,10 @@
       border-left: 20px solid var(--clr-secondary);
       @media (min-width: 1280px) {
         max-height: 100%;
+      }
+      @media (max-width: 1279px) and (min-width: 744px) {
+        max-height: 100%;
+        object-fit: cover;
       }
     }
   }
