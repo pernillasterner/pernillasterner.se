@@ -54,6 +54,7 @@
     align-self: stretch;
   }
 
+  // Article image
   .article-image-container {
     height: 200px;
     overflow: hidden;
@@ -70,6 +71,28 @@
       border-left: 20px solid var(--clr-secondary);
       @media (min-width: 1280px) {
         max-height: 100%;
+      }
+    }
+  }
+
+  // Article content
+  .article-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+
+    .tag-background {
+      background-color: var(--text);
+      padding: 2px 6px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: fit-content;
+
+      p.tag-text {
+        color: var(--clr-white);
+        font-size: 1rem;
       }
     }
   }
