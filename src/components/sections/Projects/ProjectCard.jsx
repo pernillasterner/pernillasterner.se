@@ -6,10 +6,11 @@ import { projects } from "./repo-data.json";
 import { Tag } from "/src/components/styles/typography/Tag.jsx";
 import { Paragraph } from "../../styles/typography/Paragraph";
 import { Heading } from "../../styles/typography/Heading";
+import { Button } from "../../styles/button/Button";
 
 export const ProjectCard = ({ repositories }) => {
   // State to track the number fo cards to display
-  const [visibleRepos, setVisibleRepos] = useState(10);
+  const [visibleRepos, setVisibleRepos] = useState(5);
 
   // Filter and match respositories with data in repoData.projects
   const filteredRepos = repositories.filter((repo) => {
@@ -30,7 +31,7 @@ export const ProjectCard = ({ repositories }) => {
     );
   };
 
-  const showMoreLessLabel = visibleRepos === 10 ? "Show more" : "Show less";
+  const showMoreLessLabel = visibleRepos === 5 ? "Show more" : "Show less";
 
   return (
     <div className="project-list">
@@ -54,26 +55,38 @@ export const ProjectCard = ({ repositories }) => {
               <div className="project-description">
                 <Heading level={3} text={matchingData.publicName} />
                 <Paragraph text={repo.description} />
-                <div className="skill-tags">
-                  {repo.topics.map((topic, index) => (
-                    <Tag key={index} tagText={topic} />
-                  ))}
-                </div>
               </div>
-              <div className="view-live">
-                <div className="view-btn globe">
-                  <GlobeBlackIcon />
-                  <a href={repo.homepage}>Live demo</a>
-                </div>
-                <div className="view-btn github">
-                  <GitHubBlackIcon />
-                  <a href={repo.html_url}>View the code</a>
-                </div>
+              <div className="skill-tags">
+                {repo.topics.map((topic, index) => (
+                  <Tag key={index} tagText={topic} />
+                ))}
+              </div>
+              <div className="button-wrapper">
+                <Button
+                  icon={<GlobeBlackIcon />}
+                  label="Live demo"
+                  link={repo.homepage}
+                  className="netlify-btn"
+                />
+                <Button
+                  icon={<GitHubBlackIcon />}
+                  label="View the code"
+                  link={repo.svn_url}
+                  className="github-btn"
+                />
               </div>
             </div>
           </article>
         );
       })}
+      <div className="tn-wrapper">
+        <Button
+          label={showMoreLessLabel}
+          className="show-more-btn"
+          onClick={toggleVisibleCards}
+          ariaLabel={showMoreLessLabel}
+        />
+      </div>
     </div>
   );
 };
