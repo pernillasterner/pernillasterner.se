@@ -3,6 +3,8 @@
   display: flex;
   justify-content: center;
   height: auto;
+  padding: 128px 16px;
+  padding-top: 0;
 
   .project-container {
     .project-title {
@@ -14,7 +16,7 @@
     }
 
     .project-list {
-      padding: 128px 16px;
+      // padding: 128px 16px;
       display: flex;
       flex-direction: column;
       gap: 64px;
@@ -103,6 +105,10 @@
             align-items: end;
           }
         }
+      }
+
+      .tn-wrapper {
+        margin: 0 auto;
       }
     }
   }
