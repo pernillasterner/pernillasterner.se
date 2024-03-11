@@ -1,3 +1,9 @@
+<h1 align="center">
+  <a href="">
+    <img src="/src/assets/screenshot.png" alt="Screenshot Image">
+  </a>
+</h1>
+
 ## Getting Started
 
 1.  Clone the repository to your local machine.
