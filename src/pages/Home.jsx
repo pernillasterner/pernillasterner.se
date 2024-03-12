@@ -13,7 +13,7 @@ export const Home = () => {
       <Header />
       <Tech />
       <Projects />
-      <MyWords />
+      {/* <MyWords /> */}
       <Skills />
       <Footer />
       <FooterBanner />
