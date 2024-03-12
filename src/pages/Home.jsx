@@ -1,4 +1,5 @@
 import { Header } from "../components/sections/Header/Header";
+import { LetsTalk } from "../components/sections/LetsTalk/LetsTalk";
 import { MyWords } from "../components/sections/MyWords/MyWords";
 import { Projects } from "../components/sections/Projects/Projects";
 import { Skills } from "../components/sections/Skills/Skills";
@@ -13,6 +14,7 @@ export const Home = () => {
       <Projects />
       <MyWords />
       <Skills />
+      <LetsTalk />
     </main>
   );
 };

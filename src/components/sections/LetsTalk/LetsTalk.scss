@@ -1,0 +1,84 @@
+.contact-container {
+  padding: 128px 32px 128px 33px;
+
+  .contact-wrapper {
+    max-width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 64px;
+    height: auto;
+
+    .profile-image {
+      background-image: url("/profile.jpeg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      border-radius: 50%;
+      min-width: 164px;
+      height: 164px;
+      @media screen and (max-width: 667px) {
+        position: absolute;
+        top: 50px;
+      }
+    }
+
+    .contact-info {
+      text-align: center;
+
+      a {
+        color: var(--text);
+        text-decoration: none;
+
+        &:hover {
+          color: var(--clr-primary);
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+
+  .banner {
+    position: relative;
+    width: 100%;
+    background-color: var(--clr-secondary);
+    overflow: hidden;
+  }
+
+  /* Animation moveLeftToRight is brought in */
+  .banner h3 {
+    color: white;
+    padding: 41px 0 35px 0;
+    white-space: nowrap;
+    animation: moveLeftToRight 20s linear infinite;
+  }
+
+  .icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+  }
+
+  .icons .icon-box {
+    opacity: 0.2;
+    transition: opacity 0.2s ease-in-out;
+  }
+
+  .icons .icon-box:hover {
+    opacity: 1;
+  }
+}
+
+/* Animation moveLeftToRight is set up using keyframes */
+@keyframes moveLeftToRight {
+  0% {
+    transform: translateX(0%);
+  }
+
+  100% {
+    transform: translateX(-200%);
+  }
+}
