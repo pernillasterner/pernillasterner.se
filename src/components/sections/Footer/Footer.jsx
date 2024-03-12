@@ -1,8 +1,8 @@
-import "./LetsTalk.scss";
+import "./Footer.scss";
 import { Heading } from "../../styles/typography/Heading";
 import { Image } from "../../styles/images/Image";
 
-export const LetsTalk = () => {
+export const Footer = () => {
   return (
     <footer className="contact-container">
       <div className="contact-wrapper">

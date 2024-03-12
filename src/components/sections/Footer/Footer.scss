@@ -27,37 +27,37 @@
         }
       }
     }
-  }
 
-  .banner {
-    position: relative;
-    width: 100%;
-    background-color: var(--clr-secondary);
-    overflow: hidden;
-  }
+    .icons {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 32px;
 
+      .icon-box {
+        opacity: 0.2;
+        transition: opacity 0.2s ease-in-out;
+
+        &:hover {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
+
+.banner {
+  position: relative;
+  width: 100%;
+  background-color: var(--clr-secondary);
+  overflow: hidden;
   /* Animation moveLeftToRight is brought in */
-  .banner h3 {
+  h3 {
+    font-size: 24px;
     color: white;
     padding: 41px 0 35px 0;
     white-space: nowrap;
-    animation: moveLeftToRight 20s linear infinite;
-  }
-
-  .icons {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 32px;
-  }
-
-  .icons .icon-box {
-    opacity: 0.2;
-    transition: opacity 0.2s ease-in-out;
-  }
-
-  .icons .icon-box:hover {
-    opacity: 1;
+    animation: moveLeftToRight 30s linear infinite;
   }
 }
 
