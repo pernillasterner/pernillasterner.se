@@ -9,20 +9,9 @@
     align-items: center;
     justify-content: center;
     gap: 64px;
-    height: auto;
 
-    .profile-image {
-      background-image: url("/profile.jpeg");
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center;
-      border-radius: 50%;
-      min-width: 164px;
-      height: 164px;
-      @media screen and (max-width: 667px) {
-        position: absolute;
-        top: 50px;
-      }
+    .contact-heading {
+      color: var(--clr-black);
     }
 
     .contact-info {

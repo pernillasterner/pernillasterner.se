@@ -1,34 +1,34 @@
 import "./LetsTalk.scss";
 import { Heading } from "../../styles/typography/Heading";
+import { Image } from "../../styles/images/Image";
 
 export const LetsTalk = () => {
   return (
     <footer className="contact-container">
-      <section className="contact-wrapper">
+      <div className="contact-wrapper">
         <Heading
           level={2}
           text="Let's talk"
           aria-label="This is the main heading"
           className="contact-heading"
         />
-        {/* <Image
+        <Image
           sectionClassName={"profile-img"}
           elementClassName={"circle-img"}
-          link={"/assets/profile-img-maria.JPG"}
-          ImageAltText={"Profile Image of Maria"}
-        /> */}
-        <div className="profile-image"></div>
+          link={"/assets/profile.jpeg"}
+          ImageAltText={"Profile Image of Pernilla"}
+        />
         <div className="contact-info">
           <Heading level={4} text={"Pernilla Sterner"} />
           <a href="tel:+730300766">
-            <Heading level={4} text={"+46(0)70818 21 48"} />
+            <Heading level={4} text={"+46(0)70817 21 48"} />
           </a>
           <a href="mailto:hey@pernillasterner.se">
             <Heading level={4} text={"hey@pernillasterner.se"} />
           </a>
         </div>
         <div className="icons">
-          {/* <a href="https://www.linkedin.com/in/pernillasterner">
+          <a href="https://www.linkedin.com/in/pernillasterner">
             <Image
               sectionClassName={"icon-box"}
               elementClassName={"icon"}
@@ -59,9 +59,9 @@ export const LetsTalk = () => {
               link={"/assets/icons/instagram.svg"}
               ImageAltText={"Link to Instagram"}
             />
-          </a> */}
+          </a>
         </div>
-      </section>
+      </div>
     </footer>
   );
 };
