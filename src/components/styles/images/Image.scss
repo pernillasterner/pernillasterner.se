@@ -8,9 +8,12 @@
   height: 164px;
   overflow: hidden;
   border-radius: 50%;
+  position: relative;
 }
 
 .circle-img {
+  position: absolute;
+  top: -30px;
   width: 100%;
   height: auto;
 }
