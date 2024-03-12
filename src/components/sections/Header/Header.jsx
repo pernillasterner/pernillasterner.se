@@ -2,6 +2,7 @@ import "./Header.scss";
 import { ArrowDownIcon } from "../../../assets/Icons";
 import { Paragraph } from "../../styles/typography/Paragraph";
 import { Heading } from "../../styles/typography/Heading";
+import { Image } from "../../styles/images/Image";
 
 export const Header = () => {
   const introText =
@@ -9,8 +10,15 @@ export const Header = () => {
 
   return (
     <header tabIndex="0">
-      <section className="intro-section">
-        <div className="intro-container">
+      <div className="introduction">
+        <Image
+          sectionClassName={"profile-img"}
+          elementClassName={"circle-img"}
+          link={"/assets/profile.jpeg"}
+          ImageAltText={"Profile Image of Pernilla"}
+        />
+
+        <div className="headings">
           <Heading
             level={4}
             text={"Hi, I'm Pernilla Sterner"}
@@ -24,18 +32,15 @@ export const Header = () => {
             arial-label={"Full Stack Developer"}
             className={"job-title"}
           />
+        </div>
 
-          <div className="about-me-container">
-            <div className="profile-image"></div>
-            <div className="about-me-text">
-              <Paragraph text={introText} className={"about-me"} />
-            </div>
-          </div>
+        <div className="intro-text">
+          <Paragraph text={introText} />
         </div>
-        <div className="arrow-down bounce">
-          <ArrowDownIcon />
-        </div>
-      </section>
+      </div>
+      <div className="arrow-down bounce">
+        <ArrowDownIcon />
+      </div>
     </header>
   );
 };

@@ -92,14 +92,14 @@ h6 {
 h1,
 h2 {
   color: var(--clr-primary);
-  font-size: 5rem;
+  font-size: 4rem;
   font-weight: 700;
   @media screen and (max-width: 900px) {
     font-size: 3.5rem;
   }
 
   @media screen and (max-width: 667px) {
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
 }
 
