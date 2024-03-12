@@ -11,7 +11,9 @@
       "MongoDB",
       "Express",
       "Mongoose",
-      "Node.js"
+      "Node.js",
+      "PHP",
+      "Wordpress"
     ]
   },
   {
@@ -30,7 +32,16 @@
   {
     "id": "upcoming",
     "name": "Upcoming",
-    "skillset": ["Vue.js", "Tailwind", "Typescript", "UX Design", "3D Design"]
+    "skillset": [
+      "Vue.js",
+      "Tailwind",
+      "Typescript",
+      "UX Design",
+      "3D Design",
+      "Ionic",
+      "NextJS",
+      "React Native"
+    ]
   },
   {
     "id": "more",
