@@ -15,6 +15,7 @@ header {
   margin: 0 auto;
   padding: 64px 0;
   gap: 32px;
+  padding-bottom: 180px;
 }
 
 /* ------------ MEDIA QUERIES ------------ */
@@ -72,7 +73,11 @@ header {
 /* ------------ ARROW DOWN ------------ */
 .arrow-down {
   position: relative;
-  height: 100px;
+  height: 70px;
+
+  @media (min-width: 1280px) {
+    height: 100px;
+  }
 
   &.bounce {
     position: absolute;
@@ -90,7 +95,7 @@ header {
     25%,
     75% {
       /* Move up */
-      transform: translateY(-100px);
+      transform: translateY(-80px);
     }
     50% {
       /* Stop for 1s at the top */
