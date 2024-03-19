@@ -1,6 +1,12 @@
 {
   "projects": [
     {
+      "id": 7,
+      "repoName": "ps-project-happy-thought",
+      "publicName": "Happy Thoughts",
+      "imageUrl": "../../../assets/project-img/happy.jpg"
+    },
+    {
       "id": 6,
       "repoName": "technigo-project-music-releases-vite",
       "publicName": "Music Release App",
