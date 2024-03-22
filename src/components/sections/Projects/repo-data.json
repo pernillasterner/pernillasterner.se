@@ -1,6 +1,18 @@
 {
   "projects": [
     {
+      "id": 9,
+      "repoName": "todo-app-react",
+      "publicName": "Todo App",
+      "imageUrl": "../../../assets/project-img/todo.jpg"
+    },
+    {
+      "id": 8,
+      "repoName": "technigo-project-movies-vite",
+      "publicName": "Movie App",
+      "imageUrl": "../../../assets/project-img/movie.jpg"
+    },
+    {
       "id": 7,
       "repoName": "ps-project-happy-thought",
       "publicName": "Happy Thoughts",

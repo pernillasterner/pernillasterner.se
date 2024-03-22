@@ -5,7 +5,9 @@
     "skillset": [
       "HTML5",
       "CSS3",
-      "Javascript ES6",
+      "Tailwind",
+      "Javascript",
+      "Typescript",
       "React",
       "GitHub",
       "MongoDB",
@@ -34,7 +36,6 @@
     "name": "Upcoming",
     "skillset": [
       "Vue.js",
-      "Tailwind",
       "Typescript",
       "UX Design",
       "3D Design",
