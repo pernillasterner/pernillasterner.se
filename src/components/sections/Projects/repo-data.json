@@ -1,10 +1,16 @@
 {
   "projects": [
     {
-      "id": 6,
+      "id": 7,
       "repoName": "final-project-mobile-recycle-app",
       "publicName": "TechCycle - Buy and sell used phones",
       "imageUrl": "../../../assets/project-img/techcycle.jpg"
+    },
+    {
+      "id": 6,
+      "repoName": "technigo-project-todos-redux",
+      "publicName": "Task Management App",
+      "imageUrl": "../../../assets/project-img/task.jpg"
     },
     {
       "id": 5,
