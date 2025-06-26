@@ -1,6 +1,12 @@
 {
   "projects": [
     {
+      "id": 7,
+      "repoName": "technigo-final-project-pluggIn",
+      "publicName": "Pluggin'",
+      "imageUrl": "../../../assets/project-img/pluggin.jpg"
+    },
+    {
       "id": 6,
       "repoName": "technigo-project-todos-redux",
       "publicName": "Task Management App",
